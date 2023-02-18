@@ -7,6 +7,7 @@ import icon1 from "../assets/icon-1.png";
 import icon2 from "../assets/icon-2.png";
 import icon3 from "../assets/icon-3.png";
 import Card from "../components/Card";
+import headphones from "../assets/headphones.png";
 
 const Home = () => {
   const [data, setData] = useState([]);
@@ -98,70 +99,93 @@ const Home = () => {
         </Link>
       </div>
 
-      <div className="mt-6 p-6">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
-          {data?.map((product) => (
-            <Card key={product?._id} product={product} />
-          ))}
-        </div>
-
-        <div className="mt-10">
-          <div className="flex items-center gap-2">
-            <h1 className="text-[#66FF1E] font-semibold text-xl">
-              Explore The Popular Categories
-            </h1>
-            <button className="hover:underline">See all</button>
-          </div>
-          <div className="grid grid-cols-2 gap-4">
-            <div className="shadow-md p-4 rounded-md flex items-center gap-3">
-              <div className="flex items-center">
-                <img
-                  src={icon1}
-                  alt=""
-                  className="bg-gray-200 p-1 rounded-full"
-                />
-                <img
-                  src={icon2}
-                  alt=""
-                  className="bg-gray-200 p-1 rounded-full"
-                />
-                <img
-                  src={icon3}
-                  alt=""
-                  className="bg-gray-200 p-1 rounded-full"
-                />
+      <div>
+        <div className="flex gap-3">
+          <div className="mt-10 flex">
+            <div className="flex-1 pr-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                {data?.map((product) => (
+                  <Card key={product?._id} product={product} />
+                ))}
               </div>
-              <div className="border-l-4 border-l-black pl-3">
-                <h1 className="text-[18px] font-semibold">
-                  Popular top 10 brands
+              <div className="flex items-center gap-2 mt-4">
+                <h1 className="text-[#66FF1E] font-semibold text-xl">
+                  Explore The Popular Categories
                 </h1>
-                <p>$400+ Orders & reviews</p>
+                <button className="hover:underline">See all</button>
+              </div>
+              <div className="grid grid-cols-2 gap-4">
+                <div className="shadow-md p-4 rounded-md flex items-center gap-3">
+                  <div className="flex items-center">
+                    <img
+                      src={icon1}
+                      alt=""
+                      className="bg-gray-200 p-1 rounded-full"
+                    />
+                    <img
+                      src={icon2}
+                      alt=""
+                      className="bg-gray-200 p-1 rounded-full"
+                    />
+                    <img
+                      src={icon3}
+                      alt=""
+                      className="bg-gray-200 p-1 rounded-full"
+                    />
+                  </div>
+                  <div className="border-l-4 border-l-black pl-3">
+                    <h1 className="text-[18px] font-semibold">
+                      Popular top 10 brands
+                    </h1>
+                    <p>$400+ Orders & reviews</p>
+                  </div>
+                </div>
+
+                <div className="shadow-md p-4 rounded-md flex items-center gap-3">
+                  <div className="flex items-center">
+                    <img
+                      src={icon1}
+                      alt=""
+                      className="bg-gray-200 p-1 rounded-full"
+                    />
+                    <img
+                      src={icon2}
+                      alt=""
+                      className="bg-gray-200 p-1 rounded-full"
+                    />
+                    <img
+                      src={icon3}
+                      alt=""
+                      className="bg-gray-200 p-1 rounded-full"
+                    />
+                  </div>
+                  <div className="border-l-4 border-l-black pl-3">
+                    <h1 className="text-[18px] font-semibold">
+                      Popular top 10 brands
+                    </h1>
+                    <p>$400+ Orders & reviews</p>
+                  </div>
+                </div>
               </div>
             </div>
-
-            <div className="shadow-md p-4 rounded-md flex items-center gap-3">
-              <div className="flex items-center">
-                <img
-                  src={icon1}
-                  alt=""
-                  className="bg-gray-200 p-1 rounded-full"
-                />
-                <img
-                  src={icon2}
-                  alt=""
-                  className="bg-gray-200 p-1 rounded-full"
-                />
-                <img
-                  src={icon3}
-                  alt=""
-                  className="bg-gray-200 p-1 rounded-full"
-                />
-              </div>
-              <div className="border-l-4 border-l-black pl-3">
-                <h1 className="text-[18px] font-semibold">
-                  Popular top 10 brands
+            <div className="w-64">
+              <div className="flex items-center gap-2 mt-4">
+                <h1 className="text-gray-800 font-semibold text-xl">
+                  Daily Deals
                 </h1>
-                <p>$400+ Orders & reviews</p>
+                <button className="hover:underline">See all</button>
+              </div>
+              <div className="flex flex-col gap-4 mt-4">
+                {[...Array(7)]?.map((_, index) => (
+                  <div className="grid grid-cols-3">
+                    <img src={headphones} alt="" />
+                    <div>
+                      <h1>Bots New Headphone </h1>
+                      <small>256 Review And 1150 Order</small>
+                    </div>
+                    <p>Price $45.5</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>
