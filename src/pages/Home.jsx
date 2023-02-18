@@ -103,6 +103,7 @@ const Home = () => {
         <div className="flex gap-3">
           <div className="mt-10 flex">
             <div className="flex-1 pr-6">
+              {/* display product */}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {data?.map((product) => (
                   <Card key={product?._id} product={product} />
@@ -168,6 +169,8 @@ const Home = () => {
                 </div>
               </div>
             </div>
+
+            {/* Right side daily dials section */}
             <div className="w-64">
               <div className="flex items-center gap-2 mt-4">
                 <h1 className="text-gray-800 font-semibold text-xl">
@@ -175,10 +178,10 @@ const Home = () => {
                 </h1>
                 <button className="hover:underline">See all</button>
               </div>
-              <div className="flex flex-col gap-4 mt-4">
+              <div className="flex flex-col gap-1 mt-4">
                 {[...Array(7)]?.map((_, index) => (
-                  <div className="grid grid-cols-3">
-                    <img src={headphones} alt="" />
+                  <div className="flex gap-2 items-center">
+                    <img src={headphones} alt="" className="w-10 h-10" />
                     <div>
                       <h1>Bots New Headphone </h1>
                       <small>256 Review And 1150 Order</small>
