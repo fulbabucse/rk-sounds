@@ -12,6 +12,8 @@ const Navbar = () => {
         <h1 className="text-[22px] text-gray-800 font-bold">Headphone</h1>
         <p className="ml-3 font-semibold text-gray-800">For the top brand</p>
       </div>
+
+      {/* Search Section */}
       <div className="flex items-center gap-2">
         <div class="pt-2 relative mx-auto text-gray-600">
           <input
@@ -27,6 +29,8 @@ const Navbar = () => {
             <VscSettings size={20} />
           </button>
         </div>
+
+        {/* Top Right side Icons */}
         <div className="flex items-center gap-2">
           <span className="text-black bg-[#17FF3C] p-1 rounded-md">
             <AiOutlineMail size={25} />
