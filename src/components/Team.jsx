@@ -17,6 +17,7 @@ const Team = () => {
             </h2>
           </div>
           <div class="grid gap-12 items-center md:grid-cols-3 ">
+            {/* Team member 1 */}
             <div class="space-y-4 text-center">
               <img
                 class="w-64 h-64 mx-auto object-cover rounded-xl md:w-40 md:h-40 lg:w-64 lg:h-64"
@@ -49,6 +50,8 @@ const Team = () => {
                 </Link>
               </div>
             </div>
+
+            {/* Team member 2 */}
             <div class="space-y-4 text-center">
               <img
                 class="w-64 h-64 mx-auto object-cover rounded-xl md:w-48 md:h-64 lg:w-64 lg:h-80"
@@ -81,6 +84,8 @@ const Team = () => {
                 </Link>
               </div>
             </div>
+
+            {/* Team member 3 */}
             <div class="space-y-4 text-center">
               <img
                 class="w-64 h-64 mx-auto object-cover rounded-xl md:w-40 md:h-40 lg:w-64 lg:h-64"
