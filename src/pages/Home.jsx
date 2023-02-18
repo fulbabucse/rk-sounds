@@ -21,6 +21,7 @@ const Home = () => {
 
   return (
     <div>
+      {/* Hero section */}
       <div className="flex">
         <Link class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-lg md:flex-row md:max-w-xl  dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-700 py-6">
           <img

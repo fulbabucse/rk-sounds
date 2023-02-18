@@ -7,6 +7,7 @@ import { VscSettings } from "react-icons/vsc";
 const Navbar = () => {
   return (
     <div className="flex justify-between items-center py-3 px-6">
+      {/* Logo section */}
       <div>
         <h1 className="text-[22px] text-gray-800 font-bold">Headphone</h1>
         <p className="ml-3 font-semibold text-gray-800">For the top brand</p>
